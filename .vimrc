@@ -29,6 +29,7 @@ nnoremap <silent> / :BLines<CR>
 
 " Vim Plug
 call plug#begin('~/.vim/plugged')
+Plug 'mhinz/vim-startify'
 Plug 'chriskempson/base16-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'triglav/vim-visual-increment'
