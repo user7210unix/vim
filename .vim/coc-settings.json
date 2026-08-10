@@ -1,0 +1,15 @@
+{
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "suggest.autoTrigger": "always",
+  "suggest.triggerAfterInsertEnter": true,
+
+  "suggest.minTriggerInputLength": 1,
+
+  "diagnostic.enable": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.messageTarget": "echo",
+
+  "java.format.enabled": true,
+  "java.completion.enabled": true
+}
