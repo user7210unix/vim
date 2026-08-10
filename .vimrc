@@ -29,6 +29,7 @@ nnoremap <silent> / :BLines<CR>
 
 " Vim Plug
 call plug#begin('~/.vim/plugged')
+Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
 Plug 'chriskempson/base16-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -49,6 +50,17 @@ Plug 'tpope/vim-speeddating', { 'for': 'org' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 call plug#end()
+
+
+let g:indentLine_enabled = 1
+let g:indentLine_char = '│'
+let g:indentLine_concealcursor = ''
+let g:indentLine_showFirstIndentLevel = 1
+
+
+
+" Don't make the guides too bright
+hi IndentLine guifg=#3a3a3a ctermfg=238
 
 set background=dark
 let base16colorspace=256
@@ -114,6 +126,12 @@ inoremap <silent><expr> <Tab>
     \ pumvisible() ? "\<C-n>" :
     \ CheckBackspace() ? "\<Tab>" :
     \ coc#refresh()
+
+" Previous method
+nnoremap <C-Up> [m
+
+" Next method
+nnoremap <C-Down> ]m
 
 " FZF / Consult-like navigation
 
